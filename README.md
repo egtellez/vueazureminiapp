@@ -1,2 +1,5 @@
 # vueazureminiapp
 App that submits a customer form to an azure function
+
+Notes:
+1. vue code requires nodejs. I used the compiler version. (I am new to vuejs. Have similarities with angular but still had some initial ramp-up curve to make it work)2. form doesn't have any input validation at this point. But validates that all fields have data.  (I can add unit tests also later if you want.)3. To do the form submission it requires an enter hit when everything is captured (Currently it will return a network error because rest api function url does not exist but it uses axios to send the http post.)4. Had trouble getting an azure account. Probably I can get the service using my work account and laptop but need to check. I was using my personal computer so I can try later if you want.5. Azure code is located in the back-end folder. Created separate files for functions and some helpers as well as a model for the azure table. Couldn't test it but I reviewed the patterns/snippets provided by Microsoft. 
